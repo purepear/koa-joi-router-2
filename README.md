@@ -1,6 +1,6 @@
 #koa-router-joi
 
-Joi Validation and Documentation for koa-router.
+Automated Joi Validation and Documentation for koa-router.
 
 #### Features:
 

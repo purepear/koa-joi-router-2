@@ -35,7 +35,7 @@ const generateSpec = (baseSpec, userOptions, controllers, json_schemas) => {
 	}, userOptions);
 
 	let apiRoutes = _.map(controllers, controller => controller.stack);
-	apiRoutes = _.flatten(apiRoutes).map(route => {
+	apiRoutes = _.flatten(apiRoutes).filter(route => route.name).map(route => {
 		return {
 			method: route.methods,
 			paramNames: route.paramNames,
